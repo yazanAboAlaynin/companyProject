@@ -21,9 +21,9 @@ Route::get('/products/add', 'ProductsController@add');
 Route::post('/products/store', 'ProductsController@store');
 Route::get('/products/{product}', 'ProductsController@show');
 Route::get('/products', 'ProductsController@index');
-
+Route::get('/AJaxTest/{id}' ,'HomeController@AJaxTest')->name('test');
 
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');
-Route::patch('/profile/{user}/update', 'ProfilesController@update')->name('profile.update');
+Route::get('/profile/{user}/update', 'ProfilesController@update')->name('profile.update');

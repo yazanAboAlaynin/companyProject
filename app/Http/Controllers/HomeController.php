@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function AJaxTest(Request $request){
+        $data = request()->validate([
+            'firstName' => 'required',
+
+        ]);
+
+        auth()->user()->update($data);
+
+    }
 }

@@ -12,12 +12,12 @@
                         <h1>Edit Profile</h1>
                     </div>
 
-                    <div class="form-group{{ $errors->has('firstName') ? ' has-error' : '' }}">
+                    <div  class="form-group{{ $errors->has('firstName') ? ' has-error' : '' }}">
                         <label for="firstName" class="col-md-4 control-label">First Name</label>
 
 
                         <input id="firstName" type="text" class="form-control" name="firstName"
-                               value="{{ old('firstName') ?? $user->firstName }}" required autofocus>
+                               value="{{ old('firstName') ?? $user->firstName }}" onkeyup="loadDoc()" required autofocus>
 
                         @if ($errors->has('firstName'))
                             <span class="help-block">
@@ -109,5 +109,24 @@
                 <button class="btn btn-primary"  style="margin-top:30px">Save Profile</button>
             </div>
         </form>
+        <br>
+        <div class="row"><button class="btn btn-primary" id="testbtn" onclick=loadDoc()>Test</button></div>
+
     </div>
 @endsection
+@section('script')
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("testbtn").innerHTML = this.responseText;
+                }
+            };
+            var x = document.getElementById("firstName").value;
+            xhttp.open("get", "{{ Route("test",1) }}?firstName="+x, true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send();
+        }
+    </script>
+    @endsection
