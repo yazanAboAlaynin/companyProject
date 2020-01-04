@@ -28,16 +28,43 @@ class profilesController extends Controller
     public function update(User $user)
     {
 
-        //$this->authorize('update', $user);
+        if(request()->has('firstName')){
+            $data = request()->validate([
+                'firstName' => 'required',
 
-        $data = request()->validate([
-            'firstName' => 'required',
-            'lastName' => 'required',
-            'phone' => 'required',
-            'mobile' => 'required',
-            'company' => 'required',
-            'address' => 'required',
-        ]);
+            ]);
+        }
+        if(request()->has('lastName')){
+            $data = request()->validate([
+                'lastName' => 'required',
+
+            ]);
+        }
+        if(request()->has('mobile')){
+            $data = request()->validate([
+                'mobile' => 'required',
+
+            ]);
+        }
+        if(request()->has('phone')){
+            $data = request()->validate([
+                'phone' => 'required',
+
+            ]);
+        }
+        if(request()->has('address')){
+            $data = request()->validate([
+                'address' => 'required',
+
+            ]);
+        }
+        if(request()->has('company')){
+            $data = request()->validate([
+                'company' => 'required',
+
+            ]);
+        }
+
 
         auth()->user()->update($data);
 

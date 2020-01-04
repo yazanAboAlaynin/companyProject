@@ -21,7 +21,7 @@ Route::get('/products/add', 'ProductsController@add');
 Route::post('/products/store', 'ProductsController@store');
 Route::get('/products/{product}', 'ProductsController@show');
 Route::get('/products', 'ProductsController@index');
-Route::get('/AJaxTest/{id}' ,'HomeController@AJaxTest')->name('test');
+Route::get('/AJaxTest/{user}' ,'ProfilesController@update')->name('test');
 
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
