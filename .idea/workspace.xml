@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6869ba11-6959-4751-99f6-ff41420a3f57" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/profilesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/profilesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profiles/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/profiles/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +36,7 @@
       <file leaf-file-name="profilesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/profilesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1204">
+            <state relative-caret-position="964">
               <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding />
             </state>
@@ -247,7 +244,7 @@
       <workItem from="1577255630223" duration="2654000" />
       <workItem from="1577270156025" duration="1820000" />
       <workItem from="1577379391131" duration="6172000" />
-      <workItem from="1578147375454" duration="2649000" />
+      <workItem from="1578147375454" duration="2957000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1577097097121</created>
@@ -298,11 +295,18 @@
       <option name="project" value="LOCAL" />
       <updated>1577386469141</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=".">
+      <created>1578150058185</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578150058185</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39947000" />
+    <option name="totallyTimeSpent" value="40255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -726,7 +730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/profilesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
+        <state relative-caret-position="964">
           <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding />
         </state>
