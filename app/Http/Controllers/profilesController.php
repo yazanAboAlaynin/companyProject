@@ -68,6 +68,6 @@ class profilesController extends Controller
 
         auth()->user()->update($data);
 
-        return redirect("/profile/{$user->id}");
+        return;
     }
 }
